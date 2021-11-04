@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Product{
-  final String image,title,description;
+class Product {
+  final String image, title, description;
   final int price, size, id;
   final Color color;
   Product({
@@ -12,109 +12,60 @@ class Product{
     required this.description,
     required this.size,
     required this.color,
-});
+  });
 }
-List<Product> products=[
+
+List<Product> products = [
   Product(
-    id: 1,
-    title: "Office Code",
-    price: 234,
-    size: 12,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-    image: "assets/images/bag_1.png",
-    color: Colors.lightBlue,
-  ),
+      id: 1,
+      title: "Office Code",
+      price: 234,
+      size: 12,
+      description: dummyText,
+      image: "assets/images/bag_1.png",
+      color: Color(0xFF3D82AE)),
   Product(
       id: 2,
       title: "Belt Bag",
       price: 234,
       size: 8,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
+      description: dummyText,
       image: "assets/images/bag_2.png",
-      color: Colors.orangeAccent,
-  ),
+      color: Color(0xFFD3A984)),
   Product(
       id: 3,
+      title: "Hang Top",
+      price: 234,
+      size: 10,
+      description: dummyText,
+      image: "assets/images/bag_3.png",
+      color: Color(0xFF989493)),
+  Product(
+      id: 4,
+      title: "Old Fashion",
+      price: 234,
+      size: 11,
+      description: dummyText,
+      image: "assets/images/bag_4.png",
+      color: Color(0xFFE6B398)),
+  Product(
+      id: 5,
       title: "Office Code",
       price: 234,
       size: 12,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_3.png",
-      color: Colors.grey),
-  Product(
-      id: 4,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_4.png",
-      color: Colors.deepOrangeAccent),
-  Product(
-      id: 5,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
+      description: dummyText,
       image: "assets/images/bag_5.png",
-      color: Colors.brown,
-  ),
+      color: Color(0xFFFB7883)),
   Product(
-      id: 6,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_6.png",
-      color: Colors.grey),
-  Product(
-    id: 7,
+    id: 6,
     title: "Office Code",
     price: 234,
     size: 12,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-    image: "assets/images/bag_1.png",
-    color: Colors.lightBlue,
+    description: dummyText,
+    image: "assets/images/bag_6.png",
+    color: Color(0xFFAEAEAE),
   ),
-  Product(
-      id: 8,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_2.png",
-    color: Colors.orangeAccent,
-  ),
-
-  Product(
-      id: 9,
-      title: "Office Code",
-      price: 234,
-      size: 12,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_3.png",
-      color: Colors.grey),
-  Product(
-      id: 10,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_4.png",
-      color: Colors.deepOrangeAccent),
-  Product(
-      id: 11,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_5.png",
-      color: Color(0xFF3D2AE)),
-  Product(
-      id: 12,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna ligula. Donec mollis vulputate felis ac dictum. Aliquam diam est, scelerisque non mattis in, auctor ut est. Proin a ipsum mauris. Nulla facilisi. Quisque congue sodales massa, a placerat massa vehicula a. Vestibulum volutpat, libero id lacinia facilisis, ',
-      image: "assets/images/bag_6.png",
-      color: Color(0xFF3D2AE)),
 ];
+
+String dummyText =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";
