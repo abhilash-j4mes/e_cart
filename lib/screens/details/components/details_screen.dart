@@ -1,4 +1,5 @@
 import 'package:e_cart/models/Product.dart';
+import 'package:e_cart/screens/details/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -12,6 +13,9 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: product.color,
       appBar: buildAppBar(context),
+        body:  Body(
+          product: product,
+        ),
     );
   }
 
